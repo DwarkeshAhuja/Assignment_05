@@ -1,0 +1,52 @@
+body{
+    overflow-x: hidden;
+}
+
+.overlay{
+    position : absolute;
+    left : 200px;
+    top : 250px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.col-sm-6  img:hover{
+    filter : blur(7px);
+}
+
+.col-sm-6  img{
+   transition: 0.2s ease-in-out;
+   height : 650px;
+}
+
+.col-sm-6  p.overlay{
+    z-index : 1;
+}
+
+.codeLink{
+    text-align : center;
+}
+
+.codeLink a{
+  font-size : 25px;
+  color: black;
+  text-decoration : none;
+  transition: 0.3s ease-in-out;
+}
+
+.codeLink a:hover{
+  font-size : 28px;
+  color: white;
+  padding : 10px;
+  background-color : black;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <title>C0779428 Assignment-5</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'base/css/base.css' %}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6" >
+      <a href="{% url 'linegraph' %}"><img src="https://source.unsplash.com/1600x900/?graph"/>
+      <p class="overlay">Click to View LineGraph</p>
+      </a>
+    </div>
+    <div class="col-sm-6">
+        <a href="{% url 'heatmap' %}"><img src="https://source.unsplash.com/1600x900/?heatmap"/>
+        <p class="overlay">Click to View Heatmap</p>
+        </a>
+    </div>
+  </div>
+</div>
+    <h1 class="codeLink"><a href="{% url 'code' %}"> For Code >> </a></h1>
+</body>
+</html>
